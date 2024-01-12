@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <title>Vinicius Macedo</title>
+    <title>Portifólio de Vinicius Macedo</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <a class="logo" href="#">
+            <a class="logo" href="#about-me">
                 <div class="logo__container">
                     VM
                 </div>
             </a>
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item">Principal</li>
-                    <li class="menu__item">Projetos</li>
-                    <li class="menu__item">Contatos</li>
+
+                    <li class="menu__item">
+                        <a href="#about-me">Principal</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#projects">Projetos </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#contacts">Contatos</a>
+                    </li>
+
                 </ul>
             </nav>
         </header>
@@ -101,12 +111,54 @@
                     </div>
                 </div>
             </section>
-            <footer>
-                <a href="https://storyset.com/work">Work illustrations by Storyset</a>
-            </footer>
-        </main>
-    </div>
+            <section id="contacts">
+                <h2 class="contacts__title">Contatos</h2>
+                <div class="contacts__container">
+                    <form class="contacts__form" action="https://formsubmit.co/dev.viniciusmacedo@gmail.com" method="POST">
+                        <h3 class="form-title">Envie uma mensagem</h3>
+                        <input placeholder="Nome completo" type="text" name="name" required>
+                        <input placeholder="Email" type="email" name="email" required>
+                        <textarea placeholder="Mensagem" name="message" cols="30" rows="10" required></textarea>
+                        <button type="submit">Enviar mensagem</button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                    </form>
 
+                    <ul class="contacts__links">
+
+                        <li>
+                            <a href="mailto:dev.viniciusmacedo@gmail.com" class="contacts__link">
+                                <img src="assets/images/mailbox.svg" alt="enviar email">
+
+                                <p>dev.viniciusmacedo@gmail.com</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://wa.me/5511998586725" class="contacts__link">
+                                <img src="assets/images/whatsapp.svg" alt="falar pelo whatsapp">
+
+                                <p>+55 (11) 99858-6725</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/vinicius-pereira-macedo-206710273/"
+                                class="contacts__link">
+                                <img src="assets/images/linkedin.svg" alt="falar pelo whatsapp">
+
+                                <p>Vinicius Pereira Macedo</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <small><a href="https://storyset.com/work">Ilustração retirada de Storyset</a></small>
+        </footer>
+    </div>
 </body>
 
 </html>
